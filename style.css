@@ -40,8 +40,12 @@ a {
   padding: 18px 20px 58px;
 }
 
+.intro > .text-box {
+  padding: 18px 20px;
+}
+
 .project-row {
-  margin-top: 56px;
+  margin-top: 77px;
 }
 
 .project-box {
@@ -87,7 +91,7 @@ a {
 
 .project-video-main {
   grid-area: main;
-  margin-top: 12px;
+  margin-top: 1px;
 }
 
 .project-video {
@@ -131,9 +135,9 @@ a {
   grid-area: phones;
   display: flex;
   align-items: flex-start;
-  gap: 0;
   margin-top: 19px;
   margin-left: -10px;
+  gap: 0;
 }
 
 .project-phone-row .project-video-phone {
@@ -148,6 +152,10 @@ a {
   width: min(100%, 280px);
   height: auto;
   border-radius: 10px;
+}
+
+.project-still + .project-still {
+  margin-left: -8px;
 }
 
 .project-title-stack .intro-copy + .intro-copy {
@@ -177,8 +185,12 @@ a {
     padding: 14px 14px 20px;
   }
 
+  .intro > .text-box {
+    padding: 14px;
+  }
+
   .project-row {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .project-box {
@@ -198,7 +210,7 @@ a {
 
   .project-content {
     display: block;
-    margin-left: 42px;
+    margin-left: 0;
   }
 
   .project-video {
@@ -207,7 +219,7 @@ a {
   }
 
   .project-video-main {
-    margin-top: 8px;
+    margin-top: 4px;
   }
 
   .project-description {
@@ -233,9 +245,17 @@ a {
     margin-right: 0;
   }
 
+  .project-still + .project-still {
+    margin-left: 0;
+  }
+
   .intro-copy {
     font-size: clamp(0.72rem, 3.8vw, 1rem);
     line-height: 1.02;
     letter-spacing: 0.015em;
+  }
+
+  .project-title-stack {
+    margin-left: 42px;
   }
 }
